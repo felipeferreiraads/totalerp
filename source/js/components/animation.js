@@ -12,7 +12,6 @@ const numbers = $('.stats').waypoint(direction => {
     const cardsArr =  Array.from(cards)
     cardsArr.forEach(e => {
         const number = e.getAttribute('value')
-        console.log(number)
         $(e).animateNumber({ number }, 800)
     })
     
