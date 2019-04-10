@@ -1,10 +1,10 @@
 .solutions
-    padding: 130px 0 110px
+    padding: 130px 0 90px
     h2
         margin-bottom: 30px
     .container > p  
         font-size: 20px
-        margin-bottom: 55px
+        margin-bottom: 25px
     .carousel
         overflow hidden
         max-width 1345px
@@ -19,7 +19,7 @@
         display: flex
         justify-content: space-between
         height: 100%
-        padding: 20px 0
+        padding: 50px 0 40px
     .owl-item
         display flex
         justify-content: center
@@ -56,6 +56,11 @@
     transition: transform .3s
     &:hover
         transform: scale(1.1)
+        box-shadow: 0 2px 15px 0 rgba(57, 57, 57, 0.5)
+        h3
+            &::after
+                transition width .3s ease-in-out
+                width: 100%        
     figure
         width: 100%
         height: 165px
@@ -68,6 +73,7 @@
         padding: 20px 15px 15px
         h3
             margin-bottom: 15px
+            display inline-block
         p
             color: #5a5a5a
             margin-bottom: 10px 

@@ -1,10 +1,23 @@
 header
     width 100%
-    position: absolute
+    position: fixed
     top 0
     left: 0
-    padding: 30px 0
+    height: 100px
     z-index: 9999
+    display flex
+    align-items: center
+    transition: .2s
+    &.scrolled
+        .menu
+            a
+                color: $color.secondary
+                &::after
+                    background: $color.secondary
+    .container
+        width: 1320px
+        max-width 100%
+        padding: 0 40px
     .grid
         display flex
         justify-content: flex-end
@@ -22,6 +35,21 @@ header
             text-transform: uppercase
             font-weight: bold
             letter-spacing: 0.4px
+            padding: 10px 0
+            position relative
+            &::after
+                content ''
+                width: 0
+                height: 2px
+                background: white
+                margin-top: 10px
+                transition: width ease-in-out .2s
+                position: absolute
+                bottom: 0
+                left: 0
+            &:hover
+                &::after
+                    width: 100%
             &:not(:last-child)
                 margin-right: 50px
     .ui-button
