@@ -1,7 +1,7 @@
 .ui-button
     height: 40px
     border-radius: 5px
-    background-image: $gradient-dark
+    background: $color.button
     padding: 0 10px
     text-align: center
     border: none
@@ -21,4 +21,10 @@
     &.large
         padding: 0 50px
     &:hover
-        background: linear-gradient(to bottom, #5b5e75, #172438)
+        background: darken($color.button, 30%)
+    &.small
+        height 30px
+        font-size: 13px
+        line-height: 30px
+    &.blue
+        background: $color.primary
