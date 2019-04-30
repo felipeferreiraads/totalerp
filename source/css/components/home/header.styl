@@ -18,6 +18,8 @@ header
         width: 1320px
         max-width 100%
         padding: 0 40px
+        +below($bp.lg)
+            padding: 0 20px
     .grid
         display flex
         justify-content: flex-end
@@ -29,6 +31,8 @@ header
             height 35px
     .menu
         display flex
+        +below($bp.lg)
+            display none
         a
             font-size: 16px
             color: white
@@ -53,4 +57,11 @@ header
             &:not(:last-child)
                 margin-right: 50px
     .ui-button
-        margin-left: 100px
+        margin-left: 7%
+        +below($bp.lg)
+            display none
+    .open-menu
+        font-size: 25px
+        color: white
+        +above($bp.lg)
+            display: none

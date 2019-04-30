@@ -30,6 +30,8 @@ $(window).scroll(() => {
                 background: '#fff',
                 boxShadow: '0 0 3px rgba(0,0,0,0.2)'
             }).addClass('scrolled')
+
+            $('.open-menu').css('color', '#1a293f')
         }
     } else {
         if($('header').hasClass('scrolled')) {
@@ -41,6 +43,8 @@ $(window).scroll(() => {
                 background: 'transparent',
                 boxShadow: 'none'
             }).removeClass('scrolled')
+
+            $('.open-menu').css('color', '#fff')
         }
     }
 })

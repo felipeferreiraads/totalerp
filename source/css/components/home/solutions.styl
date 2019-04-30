@@ -1,19 +1,35 @@
 .solutions
     padding: 130px 0 90px
+    +below($bp.lg)
+        padding: 50px 0
     h2
         margin-bottom: 30px
     .container > p  
         font-size: 20px
         margin-bottom: 60px
+        +below($bp.lg)
+            font-size: 18px
     .grid
         display flex
         justify-content: space-between
+        +below($bp.lg)
+            flex-wrap: wrap
+            justify-content: space-between
         > *
-            &:not(:last-child)
-                margin-right: 80px
+            +above($bp.lg)
+                flex: 1
+                &:not(:last-child)
+                    margin-right: 5%
+            +between($bp.sm, $bp.lg)
+                flex-basis: 47%
+                &:nth-child(n+3)
+                    margin-top: 50px
+            +below($bp.sm)
+                flex-basis: 100%
+                &:nth-child(n+2)
+                    margin-top: 50px
 
 .card-solution
-    width: 80%
     border-radius: 4px
     background: white
     box-shadow: 0 2px 7px 0 rgba(57, 57, 57, 0.5)
