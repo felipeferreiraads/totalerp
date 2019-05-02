@@ -50,7 +50,6 @@
     "poststylus": "^0.2.3",
     "rupture": "^0.6.1",
     "simplifyify": "^3.2.1",
-    "snazzy": "^5.0.0",
     "stylus": "^0.54.5",
     "webpack": "^3.11.0"
   },
